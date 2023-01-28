@@ -99,4 +99,9 @@ abstract class GodotAddonDependencyContainer @Inject constructor(
             isGitLike = true
         }
     }
+    fun godle4Addon(){
+        byURL("https://github.com/Frontrider/Godle4/archive/refs/heads/master.zip"){
+            isGitLike = true
+        }
+    }
 }

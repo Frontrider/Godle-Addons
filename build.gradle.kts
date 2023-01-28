@@ -10,7 +10,7 @@ plugins {
 }
 
 group = "io.github.frontrider.godle"
-version = "0.1.0"
+version = "0.2.0"
 
 repositories {
     mavenCentral()
@@ -98,9 +98,9 @@ gradlePlugin {
 
     plugins {
         create("godle") {
-            id = group.toString()
+            id = "$group-addons"
             displayName = "Godle"
-            implementationClass = "io.github.frontrider.godle.Godle"
+            implementationClass = "io.github.frontrider.godle.addons.GodleAddonPlugin"
             description = "Plugin to manage godot addons."
         }
     }
